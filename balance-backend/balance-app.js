@@ -22,7 +22,7 @@ app.put('/transaction/:transactionId', (req, res) => {
     console.log('Put transaction')
     res.send('Transaccion actualizada')
 })
-
+/* 
 // Conexion con MySql
 const mysql = require('mysql')
 const connection = mysql.createConnection({
@@ -40,7 +40,7 @@ connection.query('SELECT 1 + 1 AS solution', (err, rows, fields) => {
   console.log('The solution is: ', rows[0].solution)
 })
 
-connection.end()
+connection.end() */
 
 
 

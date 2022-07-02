@@ -23,6 +23,27 @@ app.put('/transaction/:transactionId', (req, res) => {
     res.send('Transaccion actualizada')
 })
 
+// Conexion con MySql
+const mysql = require('mysql')
+const connection = mysql.createConnection({
+  host: '127.0.0.1',
+  user: 'balanceAdmin',
+  password: 'admin111',
+  database: 'Balance_Db'
+})
+
+connection.connect()
+
+connection.query('SELECT 1 + 1 AS solution', (err, rows, fields) => {
+  if (err) throw err
+
+  console.log('The solution is: ', rows[0].solution)
+})
+
+connection.end()
+
+
+
 // APP LISTEN 
 app.listen(port = app.get('Port'), host = app.get('HostName'), () => {
     console.log('AppName: ', app.get('appName'))

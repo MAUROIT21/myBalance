@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "mysql": "^2.18.1",
+    "node": "^18.4.0"
+  },
+  "name": "mybalance",
+  "description": "*********************************************************\r App de Balance Personal, para el challenge de Alkemy Labs\r *********************************************************",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MAUROIT21/myBalance.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MAUROIT21/myBalance/issues"
+  },
+  "homepage": "https://github.com/MAUROIT21/myBalance#readme"
+}
